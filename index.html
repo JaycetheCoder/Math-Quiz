@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HOME PAGE -->
+    <div class="quiz-container" id="homePage">
+
+        <h1>Math Quiz</h1>
+        <p class="subtitle">Choose your year group and level to begin.</p>
+
+        <div class="selector-area">
+
+            <!-- YEAR SELECT -->
+            <label class="selector-label">Year:</label>
+            <select id="yearSelect" class="selector-dropdown">
+                <option value="">Select Year</option>
+                <option value="year1">Year 1</option>
+                <option value="year2">Year 2</option>
+                <option value="year3">Year 3</option>
+                <option value="year4">Year 4</option>
+                <option value="year5">Year 5</option>
+                <option value="year6">Year 6</option>
+                <option value="year7">Year 7</option>
+                <option value="year8">Year 8</option>
+                <option value="year9">Year 9</option>
+                <option value="year10">Year 10</option>
+                <option value="year11">Year 11</option>
+            </select><br>
+
+            <!-- LEVEL SELECT -->
+            <label class="selector-label">Level:</label>
+            <select id="levelSelect" class="selector-dropdown">
+                <option value="">Select Level</option>
+                <option value="level1">Level 1</option>
+                <option value="level2">Level 2</option>
+                <option value="level3">Level 3</option>
+                <option value="level4">Level 4</option>
+                <option value="level5">Level 5</option>
+            </select>
+
+            <button id="startBtn" class="btn">Start Quiz</button>
+        </div>
+    </div>
+
+    <!-- QUIZ PAGE -->
+    <div class="quiz-container" id="quizSection" style="display:none;">
+        <h1 id="quizTitle">Quiz</h1>
+        <p class="subtitle">Answer the questions below.</p>
+
+        <div class="question-card">
+            <h2 id="question-text">Question will appear here</h2>
+            <div id="options"></div>
+            <p id="feedback" class="subtitle"></p>
+        </div>
+
+        <button id="nextBtn" class="btn">Next</button>
+        <button id="returnBtn" class="btn">Return</button>
+    </div>
+
+
+
+    <!-- SCRIPTS -->
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

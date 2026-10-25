@@ -1,0 +1,133 @@
+/* ---------- GLOBAL ---------- */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #eef1f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------- MAIN CONTAINER ---------- */
+.quiz-container {
+    max-width: 700px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.12);
+}
+
+/* ---------- HEADERS ---------- */
+h1 {
+    text-align: center;
+    font-size: 2.6rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #555;
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+}
+
+/* ---------- SELECT AREA ---------- */
+.selector-area {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.selector-label {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.selector-dropdown {
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #4a90e2;
+    margin-bottom: 20px;
+    width: 65%;
+    font-size: 1.1rem;
+    background: #f7faff;
+    font-weight: 600;
+}
+
+/* ---------- BUTTONS ---------- */
+.btn {
+    width: 100%;
+    padding: 16px;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.25s ease, transform 0.1s ease;
+    font-weight: 700;
+}
+
+.btn:hover {
+    background: #3a78c2;
+    transform: scale(1.02);
+}
+
+/* ---------- QUESTION CARD ---------- */
+.question-card {
+    background: #f9f9f9;
+    padding: 25px;
+    border-left: 6px solid #4a90e2;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+#question-text {
+    font-size: 1.6rem;
+    color: #222;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* ---------- ANSWER BUTTONS ---------- */
+#options button {
+    width: 100%;
+    padding: 18px;
+    margin: 12px 0;
+    background: #ffffff;
+    border: 2px solid #4a90e2;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+
+    font-size: 1.5rem;      /* Bigger numbers */
+    font-weight: 800;       /* Bold numbers */
+    color: #1a1a1a;         /* Dark text */
+}
+
+#options button:hover {
+    background: #e6f0ff;
+    transform: scale(1.02);
+}
+
+/* ---------- CORRECT / WRONG ---------- */
+.correct {
+    background: #4CAF50 !important;
+    color: white !important;
+    border-color: #3e8e41 !important;
+}
+
+.wrong {
+    background: #ff4d4d !important;
+    color: white !important;
+    border-color: #cc0000 !important;
+}
+
+/* ---------- FEEDBACK TEXT ---------- */
+#feedback {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 10px;
+}
